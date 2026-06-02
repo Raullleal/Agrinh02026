@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agro Forte - Agricultura regenerativa, inovação e sustentabilidade no agronegócio brasileiro.">
+    <title>Agro Forte | Futuro Sustentável</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        :root { --emerald: #166534; }
+        body { font-family: 'Inter', system-ui, sans-serif; scroll-behavior: smooth; }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                             url('https://images.unsplash.com/photo-1625246333195-78d9c38ad1c4?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: -6px;
+            left: 0;
+            background-color: #4ade80;
+            transition: all 0.4s ease;
+        }
+        .nav-link:hover:after { width: 100%; }
+        
+        .section { padding: 120px 0; }
+        .card-hover:hover { transform: translateY(-15px); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-emerald-900 text-white sticky top-0 z-50 shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-seedling text-4xl text-emerald-400"></i>
+                <div>
+                    <h1 class="text-3xl font-bold tracking-tighter">Agro Forte</h1>
+                    <p class="text-xs text-emerald-300 -mt-1">Futuro Sustentável</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex gap-8 text-lg font-medium">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#iniciativas" class="nav-link">Iniciativas</a>
+                <a href="#impacto" class="nav-link">Impacto</a>
+                <a href="#galeria" class="nav-link">Galeria</a>
+                <a href="#depoimentos" class="nav-link">Depoimentos</a>
+            </div>
+            
+            <a href="#contato" class="bg-emerald-500 hover:bg-emerald-400 px-8 py-3.5 rounded-2xl font-semibold transition">
+                Contato
+            </a>
+        </div>
+    </nav>
+
+    <!-- HOME / HERO -->
+    <section id="home" class="hero h-screen flex items-center text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6" data-aos="fade-up">
+                Agro Forte.<br>
+                <span class="text-emerald-400">Futuro Sustentável.</span>
+            </h1>
+            <p class="text-2xl md:text-3xl max-w-3xl mx-auto mb-12 text-emerald-100">
+                Transformando o campo brasileiro com regeneração, tecnologia e impacto real.
+            </p>
+            <div class="flex justify-center gap-6 flex-wrap">
+                <a href="#iniciativas" class="bg-emerald-600 hover:bg-emerald-500 px-12 py-6 rounded-2xl text-xl font-semibold transition">Ver Iniciativas</a>
+                <a href="#contato" class="border-2 border-white hover:bg-white hover:text-emerald-900 px-12 py-6 rounded-2xl text-xl font-semibold transition">Seja Parceiro</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-5xl font-bold text-emerald-900 mb-8">Uma Nova Visão para o Agronegócio</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                        Fundada em 2022, a Agro Forte une produtores familiares, cooperativas, 
+                        cientistas e empresas em torno de uma agricultura que regenera o solo, 
+                        preserva a biodiversidade e gera prosperidade sustentável.
+                    </p>
+                    <div class="flex gap-8">
+                        <div>
+                            <div class="text-4xl font-bold text-emerald-600">+2.800</div>
+                            <div class="text-sm text-gray-500">Produtores Integrados</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-emerald-600">147 mil</div>
+                            <div class="text-sm text-gray-500">Hectares Gerenciados</div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad1c4" class="rounded-3xl shadow-2xl" alt="Agricultura Sustentável">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INICIATIVAS -->
+    <section id="iniciativas" class="section bg-emerald-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-16" data-aos="fade-up">Nossas Iniciativas</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-emerald-800/60 p-10 rounded-3xl card-hover transition" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-tree text-6xl text-emerald-400 mb-6"></i>
+                    <h3 class="text-3xl font-semibold mb-4">Floresta Ativa</h3>
+                    <p class="text-emerald-200">Integração Lavoura-Pecuária-Floresta (ILPF) com mais de 45 mil hectares restaurados.</p>
+                </div>
+                <div class="bg-emerald-800/60 p-10 rounded-3xl card-hover transition" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-droplet text-6xl text-emerald-400 mb-6"></i>
+                    <h3 class="text-3xl font-semibold mb-4">Água Viva</h3>
+                    <p class="text-emerald-200">Recuperação de nascentes e manejo sustentável de recursos hídricos em 12 municípios.</p>
+                </div>
+                <div class="bg-emerald-800/60 p-10 rounded-3xl card-hover transition" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-wheat-awn text-6xl text-emerald-400 mb-6"></i>
+                    <h3 class="text-3xl font-semibold mb-4">Solo Vivo</h3>
+                    <p class="text-emerald-200">Agricultura regenerativa com foco em carbono orgânico e redução de insumos químicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACTO -->
+    <section id="impacto" class="section bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold text-emerald-900 mb-6">Impacto Real</h2>
+            <p class="text-xl text-gray-600 mb-16">Resultados que transformam vidas e o meio ambiente</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="p-10 bg-emerald-50 rounded-3xl card-hover">
+                    <div class="text-6xl font-bold text-emerald-600">38.450t</div>
+                    <p class="mt-3 font-medium">CO₂ Evitado</p>
+                </div>
+                <div class="p-10 bg-emerald-50 rounded-3xl card-hover">
+                    <div class="text-6xl font-bold text-emerald-600">+427</div>
+                    <p class="mt-3 font-medium">Espécies Protegidas</p>
+                </div>
+                <div class="p-10 bg-emerald-50 rounded-3xl card-hover">
+                    <div class="text-6xl font-bold text-emerald-600">R$ 87M</div>
+                    <p class="mt-3 font-medium">Renda Gerada</p>
+                </div>
+                <div class="p-10 bg-emerald-50 rounded-3xl card-hover">
+                    <div class="text-6xl font-bold text-emerald-600">94%</div>
+                    <p class="mt-3 font-medium">Satisfação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="section bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-16 text-emerald-900">No Campo com Realidade</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad1c4" class="rounded-3xl shadow-xl hover:scale-105 transition duration-500" alt="">
+                <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c2a0e" class="rounded-3xl shadow-xl hover:scale-105 transition duration-500" alt="">
+                <img src="https://images.unsplash.com/photo-1500595046743-4f5f0f0c0b" class="rounded-3xl shadow-xl hover:scale-105 transition duration-500" alt="">
+                <img src="https://images.unsplash.com/photo-1594736797930-7d5d6c1e9c3b" class="rounded-3xl shadow-xl hover:scale-105 transition duration-500" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="section bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-16 text-emerald-900">Vozes do Campo</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-emerald-50 p-10 rounded-3xl card-hover">
+                    <p class="italic">"Minha produtividade aumentou 38% e o solo nunca esteve tão vivo. A Agro Forte mudou minha vida."</p>
+                    <div class="mt-8 font-semibold">João Mendes • Paraná</div>
+                </div>
+                <div class="bg-emerald-50 p-10 rounded-3xl card-hover">
+                    <p class="italic">"Finalmente uma iniciativa que realmente apoia o pequeno produtor com tecnologia e respeito."</p>
+                    <div class="mt-8 font-semibold">Maria Silva • Mato Grosso</div>
+                </div>
+                <div class="bg-emerald-50 p-10 rounded-3xl card-hover">
+                    <p class="italic">"Conseguimos certificação carbono neutro e aumentamos o valor do nosso produto em 42%."</p>
+                    <div class="mt-8 font-semibold">Pedro Costa • Minas Gerais</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section bg-emerald-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20">
+                <div>
+                    <h2 class="text-5xl font-bold mb-10">Vamos construir o futuro juntos?</h2>
+                    <p class="text-xl text-emerald-100 mb-10">Entre em contato e faça parte dessa transformação.</p>
+                    <div class="space-y-6">
+                        <div class="flex gap-4"><i class="fa-solid fa-envelope text-2xl mt-1"></i> contato@agroforte.org</div>
+                        <div class="flex gap-4"><i class="fa-solid fa-phone text-2xl mt-1"></i> (41) 99988-7766</div>
+                        <div class="flex gap-4"><i class="fa-solid fa-location-dot text-2xl mt-1"></i> Curitiba, Paraná — Brasil</div>
+                    </div>
+                </div>
+                <form class="bg-white/10 backdrop-blur p-10 rounded-3xl">
+                    <input type="text" placeholder="Nome completo" class="w-full mb-6 p-5 rounded-2xl bg-white/10 border border-white/30 focus:border-emerald-400 outline-none text-white">
+                    <input type="email" placeholder="E-mail" class="w-full mb-6 p-5 rounded-2xl bg-white/10 border border-white/30 focus:border-emerald-400 outline-none text-white">
+                    <textarea placeholder="Sua mensagem ou proposta..." rows="6" class="w-full mb-6 p-5 rounded-2xl bg-white/10 border border-white/30 focus:border-emerald-400 outline-none text-white"></textarea>
+                    <button type="button" onclick="enviarMensagem()" class="w-full bg-emerald-500 hover:bg-emerald-400 py-6 rounded-2xl font-semibold text-xl">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex justify-center items-center gap-3 mb-6">
+                <i class="fa-solid fa-seedling text-3xl text-emerald-400"></i>
+                <span class="text-3xl font-bold text-white">Agro Forte</span>
+            </div>
+            <p>© 2026 Agro Forte — Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Construindo um agronegócio forte, regenerativo e inclusivo para o Brasil.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        function enviarMensagem() {
+            alert("✅ Mensagem enviada com sucesso!\n\nAgradecemos seu interesse. Entraremos em contato em breve.");
+        }
+    </script>
+</body>
+</html>
